@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieDetailsVC" customModule="UpcomingMovies" customModuleProvider="target">
+            <connections>
+                <outlet property="firstGenre" destination="ZCU-gO-2Aw" id="VhJ-jp-3FF"/>
+                <outlet property="fourthGenre" destination="Nok-Tb-g2P" id="eBq-8S-Lbh"/>
+                <outlet property="getTicketsButton" destination="H4Z-sO-sbJ" id="FLj-4a-yYr"/>
+                <outlet property="movieDate" destination="GBE-3D-2NC" id="xnk-ka-dsO"/>
+                <outlet property="movieImage" destination="ttc-hc-XOm" id="7IT-KW-yPv"/>
+                <outlet property="movieOverview" destination="q4O-wZ-KRn" id="ebB-JY-1L6"/>
+                <outlet property="movieSynopsis" destination="Wte-yF-bC0" id="b2K-Rm-hMB"/>
+                <outlet property="secondGenre" destination="f47-aE-5aP" id="tGo-y9-Aaq"/>
+                <outlet property="thirdGenre" destination="7nG-W7-5DF" id="wEn-fQ-WNr"/>
+                <outlet property="view" destination="r7F-Zr-Ue3" id="imf-E1-ZrI"/>
+                <outlet property="watchTrailerButton" destination="q8y-rY-shX" id="fGs-dY-u4K"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="r7F-Zr-Ue3">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ttc-hc-XOm">
+                    <rect key="frame" x="0.0" y="44" width="414" height="359"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="359" id="fLY-mp-mVp"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4Z-sO-sbJ">
+                    <rect key="frame" x="65" y="321" width="282" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Get Tickets">
+                        <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8y-rY-shX">
+                    <rect key="frame" x="66" y="358" width="282" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Watch Trailer">
+                        <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glh-4t-jMl">
+                    <rect key="frame" x="39" y="510" width="53.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nDm-Eo-WI5">
+                    <rect key="frame" x="39" y="553" width="45.5" height="14.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCU-gO-2Aw">
+                            <rect key="frame" x="0.0" y="0.0" width="6" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                            <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f47-aE-5aP">
+                            <rect key="frame" x="11" y="0.0" width="8" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                            <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nG-W7-5DF">
+                            <rect key="frame" x="24" y="0.0" width="8" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                            <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nok-Tb-g2P">
+                            <rect key="frame" x="37" y="0.0" width="8.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                            <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4O-wZ-KRn">
+                    <rect key="frame" x="39" y="609" width="70" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wte-yF-bC0">
+                    <rect key="frame" x="39" y="637" width="334" height="224.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="224.5" id="ywv-Ul-EHJ"/>
+                    </constraints>
+                    <string key="text">As a collection of history's worst tyrants and criminal masterminds gather to plot a war to wipe out millions, one man must race against time to stop them. Discover the origins of the very first independent intelligence agency in The King's Man. The Comic Book “The Secret Service” by Mark Millar and Dave Gibbons.</string>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iKM-SU-dR8">
+                    <rect key="frame" x="66" y="279" width="242" height="19.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Theaters:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAb-fs-yTn">
+                            <rect key="frame" x="0.0" y="0.0" width="88.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 22, 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBE-3D-2NC">
+                            <rect key="frame" x="96.5" y="0.0" width="145.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="rYM-sG-23O"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="rYM-sG-23O" firstAttribute="trailing" secondItem="q8y-rY-shX" secondAttribute="trailing" constant="66" id="6jU-Bu-6k4"/>
+                <constraint firstItem="Wte-yF-bC0" firstAttribute="top" secondItem="q4O-wZ-KRn" secondAttribute="bottom" constant="8.5" id="EwD-SA-iVn"/>
+                <constraint firstItem="nDm-Eo-WI5" firstAttribute="top" secondItem="Glh-4t-jMl" secondAttribute="bottom" constant="23.5" id="Got-Ru-Lrn"/>
+                <constraint firstItem="ttc-hc-XOm" firstAttribute="centerX" secondItem="q8y-rY-shX" secondAttribute="centerX" id="HIJ-5c-sd0"/>
+                <constraint firstItem="H4Z-sO-sbJ" firstAttribute="top" secondItem="iKM-SU-dR8" secondAttribute="bottom" constant="22.5" id="JUV-o2-UPe"/>
+                <constraint firstItem="ttc-hc-XOm" firstAttribute="top" secondItem="rYM-sG-23O" secondAttribute="top" id="Pun-D3-Ta5"/>
+                <constraint firstItem="rYM-sG-23O" firstAttribute="trailing" secondItem="ttc-hc-XOm" secondAttribute="trailing" id="R5P-4g-Kpd"/>
+                <constraint firstItem="Wte-yF-bC0" firstAttribute="leading" secondItem="nDm-Eo-WI5" secondAttribute="leading" id="RIe-PD-ztj"/>
+                <constraint firstItem="rYM-sG-23O" firstAttribute="trailing" secondItem="H4Z-sO-sbJ" secondAttribute="trailing" constant="67" id="Wxh-YR-K3N"/>
+                <constraint firstItem="H4Z-sO-sbJ" firstAttribute="centerX" secondItem="Wte-yF-bC0" secondAttribute="centerX" id="Yes-E0-H3F"/>
+                <constraint firstItem="H4Z-sO-sbJ" firstAttribute="leading" secondItem="rYM-sG-23O" secondAttribute="leading" constant="65" id="Yxo-7p-pK4"/>
+                <constraint firstItem="q8y-rY-shX" firstAttribute="leading" secondItem="iKM-SU-dR8" secondAttribute="leading" id="bX6-lQ-Dwc"/>
+                <constraint firstItem="Wte-yF-bC0" firstAttribute="leading" secondItem="rYM-sG-23O" secondAttribute="leading" constant="39" id="cGP-XM-eqy"/>
+                <constraint firstItem="q8y-rY-shX" firstAttribute="top" secondItem="H4Z-sO-sbJ" secondAttribute="bottom" constant="8" symbolic="YES" id="cgL-VZ-s9v"/>
+                <constraint firstItem="Wte-yF-bC0" firstAttribute="leading" secondItem="Glh-4t-jMl" secondAttribute="leading" id="flj-mh-aO4"/>
+                <constraint firstItem="iKM-SU-dR8" firstAttribute="top" secondItem="rYM-sG-23O" secondAttribute="top" constant="235" id="id2-6s-phD"/>
+                <constraint firstItem="ttc-hc-XOm" firstAttribute="leading" secondItem="rYM-sG-23O" secondAttribute="leading" id="k6h-hR-7zH"/>
+                <constraint firstItem="Wte-yF-bC0" firstAttribute="leading" secondItem="q4O-wZ-KRn" secondAttribute="leading" id="kHQ-UB-VKr"/>
+                <constraint firstItem="q4O-wZ-KRn" firstAttribute="top" secondItem="nDm-Eo-WI5" secondAttribute="bottom" constant="41.5" id="oGe-vt-yfx"/>
+                <constraint firstItem="q8y-rY-shX" firstAttribute="leading" secondItem="rYM-sG-23O" secondAttribute="leading" constant="66" id="oQw-6m-R5Z"/>
+                <constraint firstItem="rYM-sG-23O" firstAttribute="bottom" secondItem="Wte-yF-bC0" secondAttribute="bottom" constant="0.5" id="wus-yM-j5A"/>
+            </constraints>
+            <point key="canvasLocation" x="707" y="-98"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
